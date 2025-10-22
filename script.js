@@ -80,7 +80,7 @@ function renderList(arr){
     const item = document.createElement('div');
     item.className='video-item';
     item.innerHTML = `<div class="thumb">VID</div><div><div class="title">${name}</div><div class="small">${name}</div></div>`;
-    item.addEventListener('click', ()=> showLocal('./' + encodeURIComponent(name).replace(/%2F/g,'/'), name));
+    item.addEventListener('click', ()=> showLocal(name, name));
     videosList.appendChild(item);
   });
 }
